@@ -1,0 +1,16 @@
+{
+  "name": "assignments-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "scripts": {
+    "watch": "eleventy --serve",
+    "build": "eleventy"
+  }
+}
