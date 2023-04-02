@@ -10,7 +10,14 @@
     "@11ty/eleventy": "^2.0.1"
   },
   "scripts": {
-    "watch": "eleventy --serve",
-    "build": "eleventy"
+    "watch:sass": "sass --watch src/styles:_site/static/css",
+    "build:sass": "sass src/styles:_site/static/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
+  },
+  "devDependencies": {
+    "sass": "^1.60.0"
   }
 }
